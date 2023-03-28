@@ -1,0 +1,673 @@
+<?php
+
+if (isset($_POST["submit"]))
+
+{
+    
+
+include_once("config.php");
+
+$nome = $_POST["nome"];
+$mensagem  = $_POST["mensagem"];
+$email = $_POST["email"];
+
+
+$result = mysqli_query($conexao, "INSERT INTO usuarios(nome,mensagem,email) VALUES ('$nome','$mensagem','$email')");
+
+}
+?> 
+ 
+<!DOCTYPE html> 
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>CV / Resumo &amp; Online</title>
+ 
+        <link rel="shortcut icon" href="images/favicon.png">
+       
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Efeito Carrosel -->
+        <link href="css/owl.carousel.css" rel="stylesheet">
+        <link href="css/owl.theme.default.css" rel="stylesheet">
+        <!-- Efeito Popup-->
+        <link href="css/magnific-popup.min.css" rel="stylesheet">
+        <!-- Icons Fonts -->
+        <link href="icons-fonts/style.css" rel="stylesheet">
+        <!-- Preloader -->
+        <link href="css/preloader.min.css" rel="stylesheet">
+        <!-- Main styles -->
+        <link href="css/styles.min.css" rel="stylesheet">
+        <!-- Estilo Responsivo -->
+        <link href="css/responsive.min.css" rel="stylesheet">
+        <!-- Fonte de Icons -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- Fontes Baixadas do Google -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,800,700italic' rel='stylesheet' type='text/css'>
+       
+		
+		
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div class="preloader">
+            <span class="loader">
+                <span class="loader-inner"></span>
+            </span>
+        </div>
+        <!-- end Preloader -->
+		
+		<div class="right-br"></div>
+
+		<div class="left-br"></div>
+		<div class="fixed-left-contact">
+			<p>+258&nbsp;865&nbsp;337973</p>
+		</div>
+		
+        <!-- Barra Lateral -->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-2 sidebar">
+                    <div class="col-sm-2 sidebarWrapper">
+                        <!-- Foto Perfil -->
+						<img class="user-pic" src="images/avatar.jpg" alt="">
+						<div class="signature">
+							<img class="img-responsive" alt="signature" src="images/signature.png">
+						</div>
+                        <!-- Menu -->
+                        <div class="menu">
+                            <div class="toggle-btn">
+                                <span class="lines"></span>
+                            </div>
+                            <ul class="nav">
+                                <li class="active">
+                                    <a href="#about">Sobre mim</a>
+                                </li>
+                                <li>
+                                    <a href="#services">Servicos</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#resume">Resumo</a>
+                                </li>
+                                <li>
+                                    <a href="#blog">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonial">Testemunhos</a>
+                                </li>
+                                <li>
+                                    <a href="#contact">Contatos</a>
+                                </li>
+                            </ul>
+                        </div><!-- Fim de Menu -->
+                    </div>
+                </div>
+            </div><!-- Fim da linha -->
+        </div><!-- Fim do container -->
+        <!-- Barra Lateral -->
+
+        <!-- Sobre Seccao -->
+        <section id="about">
+            <div class="about-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 aboutWrapper">
+                            <!-- Seccao de titutlos -->
+							<div class="nav-extra hidden-xs">
+								<!-- Botao Contato -->
+								<a data-target="#callmeModal" data-toggle="modal" href="#" class="btn btn-default">
+									<span aria-hidden="true" class="icon_phone"></span>
+								</a>
+								<!-- Botao Ligue Agora' -->
+								<a href="#contact" class="btn btn-info">Ligue Agora</a>
+							</div>
+                            <div class="section-title">
+                                <h2><span>01</span>Sobre mim</h2>
+							</div><!-- Fim da seccao de Titulos -->
+							<h1>Olá, eu sou <strong>Inocente Chavane</strong> <br>Designer e  <span class="bg-color"> Gestor de Sistemas de 
+                                Informação</span></h1>
+							<p>Sou altamente qualificado e experiente em gerenciar tecnologias e sistemas que são essenciais para o sucesso de uma organização. Meu papel envolve liderar equipes de TI, gerenciar projetos de tecnologia, garantir a segurança e integridade dos dados, implementar inovações tecnológicas, otimizar processos e garantir que as necessidades de tecnologia da empresa sejam atendidas.
+                                Além disso, estou sempre atualizado com as últimas tendências e tecnologias em minha área, e estou disposto a aprender e adaptar-me rapidamente para atender às necessidades da organização. Meu compromisso em fornecer soluções tecnológicas eficientes e inovadoras torna-me um membro valioso da equipe de liderança da empresa.
+                                <div class="skills">
+                                <!-- Hablidade 1 -->
+                                <div class="skill-outer">
+                                    <h4>HTML5 &amp; CSS3<span>100%</span></h4>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hablidade 2 -->
+                                <div class="skill-outer">
+                                    <h4>JavaScript<span>90%</span></h4>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hablidade 3 -->
+                                <div class="skill-outer">
+                                    <h4>React<span>85%</span></h4>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Hablidade 4 -->
+                                <div class="skill-outer">
+                                    <h4>Wordpress<span>95%</span></h4>
+                                    <div class="progress progress-striped active">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Fim da seccao Hablidade 4 -->
+                            </div>
+                        </div>
+                    </div><!-- Fim da Linha -->
+                </div><!-- Fim do container -->
+            </div>
+        </section>
+        <!-- Fim da seccao Sobre-->
+
+        <!-- Seccao de Servicos -->
+        <section id="services">
+            <div class="services-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 servicesWrapper">
+                            <!-- Seccao titulo -->
+                            <div class="section-title">
+                                <h2><span>02</span>Servicos</h2>
+                            </div><!-- Fim Seccao titulo -->
+                            <!-- Servico tabela 1 -->
+                            <div class="service-box">
+                                <div>
+                                    <i class="icon icon_globe"></i>
+                                </div>
+                                <div>
+                                    <h3>Web Development</h3>
+                                    <p>Web development é a prática de criar aplicativos, sites e outros tipos de soluções para a internet.</p>
+                                </div>
+                            </div>
+                            <!-- Servico tabela 2 -->
+                            <div class="service-box">
+                                <div>
+                                    <i class="icon icon_pens"></i>
+                                </div>
+                                <div>
+                                    <h3>Design de UX e UI</h3>
+                                    <p>Fornecemos serviços de UX e UI para criar soluções agradáveis e intuitivas para usuários,
+                                     aumentando a satisfação do cliente e sucesso do negócio..</p>
+                                </div>
+                            </div>
+                            <!-- Servico tabela 3 -->
+                            <div class="service-box">
+                                <div>
+                                    <i class="icon icon_easel"></i>
+                                </div>
+                                <div>
+                                    <h3>Marketing Online</h3>
+                                    <p>com os  serviços de marketing digital ajudamos as empresas a alcançar seu público-alvo através da internet, utilizando técnicas como SEO, criação de conteúdo,
+                                         gerenciamento de redes sociais, publicidade online e análise de dados, com estratégias personalizadas e ajustes contínuos para maximizar a presença online e atingir os objetivos de negócio..</p>
+                                </div>
+                            </div>
+                            <!-- Servico tabela 4 -->
+                            <div class="service-box">
+                                <div>
+                                    <i class="icon icon_globe-2"></i>
+                                </div>
+                                <div>
+                                    <h3>Optimizacao de sites</h3>
+                                    <p>A otimização de sites visa melhorar a visibilidade nos resultados de busca orgânica, com técnicas como pesquisa de palavras-chave, otimização de conteúdo, meta tags, tempo de carregamento, entre outros fatores que afetam a experiência do usuário e a relevância para os mecanismos de busca..</p>
+                                </div>
+                            </div>
+                            <!-- Fim Servico tabela 4 -->
+                        </div>
+                    </div><!-- Fim da linha -->
+                </div><!-- Fim do container -->
+            </div>
+        </section>
+        <!-- Fim da seccao Servico tabela -->
+
+        <!-- Seccao de Portifolio -->
+        <section id="portfolio">
+            <div class="portfolio-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 portfolioWrapper">
+                            <!-- Seccao titulos -->
+                            <div class="section-title">
+                                <h2 class="pull-left"><span>03</span>Portfolio</h2>
+								<div class="portfolio-filter pull-right">
+                                <ul>
+                                    <li class="btn btn-default filter active" data-filter="all">Mostrar tudo</li><!--
+                                    --><li class="btn btn-default filter" data-filter=".category-1">Servicos</li><!--
+                                    --><li class="btn btn-default filter" data-filter=".category-2">Websites</li>
+                                </ul>
+                            </div>
+                            </div><!-- Fim da seccao titulos -->
+                            <div class="row">
+                                <div id="mix-container">
+                                    <!-- Imagem 1 -->
+                                    <div class="col-xs-12 col-sm-4 mix category-1">
+                                        <div class="imageWrapper">
+                                            <a class="lightbox" href="#popup-1">
+                                                <img src="images/portfolio-1.jpg" alt=""><!-- Imagem 1 fonte -->
+                                                <div class="imageHover">
+                                                    <div>
+                                                        <h3>Plano e orcamento</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </a>
+											<!-- popup conteudo -->
+                                            <div id="popup-1" class="mfp-hide popup-box">
+                                                <img src="images/portfolio-1.jpg" alt=""><!-- Image 1 sofonteurce -->
+                                                <div>
+                                                      </div>
+                                            </div>
+                                            <!-- fim da seccao popup-->
+                                        </div>
+                                    </div>
+                                    <!-- Imagem 2 -->
+                                    <div class="col-xs-12 col-sm-4 mix category-2">
+                                        <div class="imageWrapper">
+                                            <a class="lightbox" href="#popup-2">
+                                                <img src="images/portfolio-2.jpg" alt=""><!-- Imagem 2 fonte -->
+                                                <div class="imageHover">
+                                                    <div>
+                                                        <h3>Estrategias Comerciais</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- popup conteudo -->
+                                            <div id="popup-2" class="mfp-hide popup-box">
+                                                <img src="images/portfolio-2.jpg" alt=""><!-- Imagem 2 fonte -->
+                                                <div>
+                                                       </div>
+                                            </div>
+                                            <!-- fim da seccao popup -->
+                                        </div>
+                                    </div>
+                                    <!-- Imagem 3 -->
+                                    <div class="col-xs-12 col-sm-4 mix category-1">
+                                        <div class="imageWrapper">
+                                            <a class="lightbox" href="#popup-3">
+                                                <img src="images/portfolio-3.jpg" alt=""><!-- Imagem 3 fonte -->
+                                                <div class="imageHover">
+                                                    <div>
+                                                        <h3>Branding para todo tipo de produto e marca</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- popup conteudo -->
+                                            <div id="popup-3" class="mfp-hide popup-box">
+                                                <img src="images/portfolio-3.jpg" alt=""><!-- Imagem 3 fonte -->
+                                                <div>
+                                                    </div>
+                                            </div>
+                                            <!-- fim da seccao popup -->
+                                        </div>
+                                    </div>
+                                    <!-- Imagem 4 -->
+                                    <div class="col-xs-12 col-sm-4 mix category-2">
+                                        <div class="imageWrapper">
+                                            <a class="lightbox" href="#popup-4">
+                                                <img src="images/portfolio-4.jpg" alt=""><!-- Imagem 4 fonte -->
+                                                <div class="imageHover">
+                                                    <div>
+                                                        <h3>Projetos para todo tipo de dispositivos</h3>
+                                                      
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- popup conteudo -->
+                                            <div id="popup-4" class="mfp-hide popup-box">
+                                                <img src="images/portfolio-4.jpg" alt=""><!-- Imagem 4 fonte -->
+                                                <div>
+                                                   </div>
+                                            </div>
+                                            <!-- fim da seccao popup de conteudo -->
+                                        </div>
+                                    </div>
+                                    <!-- Imagem 5 -->
+                                    <div class="col-xs-12 col-sm-4 mix category-2">
+                                        <div class="imageWrapper">
+                                            <a class="lightbox" href="#popup-5">
+                                                <img src="images/portfolio-5.jpg" alt=""><!-- Imagem 2 fonte -->
+                                                <div class="imageHover">
+                                                    <div>
+                                                        <h3>Websites Comerciais</h3>
+                                                       
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- popup conteudo -->
+                                            <div id="popup-5" class="mfp-hide popup-box">
+                                                <img src="images/portfolio-5.jpg" alt=""><!-- Imagem 2 fonte -->
+                                                <div>
+                                                   </div>
+                                            </div>
+                                            <!-- fim da seccao popup -->
+                                        </div>
+                                    </div>
+                                    <!-- Imagem 6 -->
+                                    <div class="col-xs-12 col-sm-4 mix category-1">
+                                        <div class="imageWrapper">
+                                            <a class="lightbox" href="#popup-6">
+                                                <img src="images/portfolio-6.jpg" alt=""><!-- Imagem 3 fonte -->
+                                                <div class="imageHover">
+                                                    <div>
+                                                        <h3>Estrategias de marketing digital</h3>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <!-- popup conteudo -->
+                                            <div id="popup-6" class="mfp-hide popup-box">
+                                                <img src="images/portfolio-6.jpg" alt=""><!-- Imagem 3 fonte -->
+                                                <div>
+                                                    </div>
+                                            </div>
+                                            <!-- fim da seccao popup -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- fim da tabela interior -->
+                        </div>
+                    </div><!-- fim da tabela -->
+                </div><!-- fim do container -->
+            </div>
+        </section>
+        <!-- FIM DA SECCAO DE PORTIFOLIO -->
+
+        <!-- Seccao de CV resumo-->
+        <section id="resume">
+            <div class="resume-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 resumeWrapper">
+                            <!-- Seccao titulos -->
+                            <div class="section-title">
+                                <h2><span>04</span>Resumo</h2>
+                            </div><!--Fim Seccao de titulos-->
+                            <!-- Tabela resumo 1 -->
+                            <div class="resume-box">
+                                <div>
+                                    <i class="icon_pencil"></i>
+                                </div>
+                                <div>
+                                    <h3>Instituto de Arte e Tecnologias Espanor</h3>
+                                    <span>2016 - Present</span>
+                                    <p>– Concluiu com sucesso o curso Microsoft Unlimited Potencial Informatics no
+Instituto ESPA-NOR – Milange..</p>
+                                </div>
+                            </div>
+                            <!-- Tabela resumo 2 -->
+                            <div class="resume-box">
+                                <div>
+                                    <i class="icon_toolbox_alt"></i>
+                                </div>
+                                <div>
+                                    <h3>Instituto Tecnico de IT</h3>
+                                    <span>2014 - 2015</span>
+                                    <p>– Concluído o curso de instrumentos e ações para implementar uma RH, ministrado por
+Desenvolver Psicologia Integrada, online – Brasil.</p>
+                                </div>
+                            </div>
+                            <!-- Tabela resumo 3 -->
+                            <div class="resume-box">
+                                <div>
+                                    <i class="icon_genius"></i>
+                                </div>
+                                <div>
+                                    <h3>Associacao Kumbedji</h3>
+                                    <span>2021 - 2022</span>
+                                    <p>Completou o curso de Saúde e Segurança Ocupacional na Associação Kumbedji,
+online – Beira;
+.</p>
+                                </div>
+                            </div>
+                            <!-- Tabela resumo 4 -->
+                            <div class="resume-box">
+                                <div>
+                                    <i class="icon_contacts_alt"></i>
+                                </div>
+                                <div>
+                                    <h3>Licenciatura em IT</h3>
+                                    <span>2017 - 2021</span>
+                                    <p>Completou a licenciatura em Tecnologias de Informação na Universidade Católica de 
+Moçambique – Quelimane.</p>
+                                </div>
+                            </div>
+                            <!-- Fim do resumo 4 -->
+                        </div>
+                    </div><!-- Fim da tabela -->
+                </div><!-- Fim do container -->
+            </div>
+        </section>
+        <!-- Fim da seccao de CV Resumo-->
+
+        <!-- Seccao Blog -->
+        <section id="blog">
+            <div class="blog-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 blogWrapper">
+                            <!-- seccao titulos -->
+                            <div class="section-title">
+                                <h2><span>05</span>Servicos prestados recentemente</h2>
+                            </div><!-- Fim seccao titulos -->
+                            <!-- servicos Poste 1 -->
+                            <div class="blog-post row">
+							<div class="col-sm-4">
+								<div class="blog-img">
+									<img src="images/blog-img-1.jpg" alt="">
+									<span class="card-title post-ver-date"><span class="icon_calendar" aria-hidden="true"></span> Janeiro 27, 2023</span>
+								</div>
+								<div class="blog-dis">
+									<h3>Servicos de manutencao e melhoria de Websites</h3>
+									<p></p>
+									<a class="btn btn-default">Ler mais</a>
+								</div>
+							</div>
+                            <div class="col-sm-4">
+								<div class="blog-img">
+									<img src="images/blog-img-2.jpg" alt="">
+									<span class="card-title post-ver-date"><span class="icon_calendar" aria-hidden="true"></span> Fevereiro 24, 2023</span>
+								</div>
+								<div class="blog-dis">
+									<h3>Ajuda no pranjemanto de estrategias de marketing digital</h3>
+									<p></p>
+									<a class="btn btn-default">Ler mais</a>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="blog-img">
+									<img src="images/blog-img-3.jpg" alt="">
+									<span class="card-title post-ver-date"><span class="icon_calendar" aria-hidden="true"></span> Marco 24, 2023</span>
+								</div>
+								<div class="blog-dis">
+									<h3>Manutencao e melhoria de rede no Instituto de Linguas - Beira</h3>
+									<p></p>
+									<a class="btn btn-default">Ler mais</a>
+								</div>
+							</div>
+                            </div>
+                            <!-- Fim post  de servicos prestados 3 -->
+                        </div>
+                    </div><!-- Fim da tabeka -->
+                </div><!-- Fim do container -->
+            </div>
+        </section>
+
+
+        <!-- Seccao de Testemunhos -->
+        <section id="testimonial">
+            <div class="testimonial-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 testimonialWrapper">
+                            <!-- seccao titulos -->
+                            <div class="section-title">
+                                <h2><span>06</span>Testemunhos</h2>
+                            </div><!-- Fim da seccao titulos -->
+                            <div class="testimonial-box">
+                                <div id="testimonialSlider" class="owl-carousel">
+                                    <!-- 1 -->
+									<div class="testimonial">
+										<div class="testimonial_content">
+											<div class="testimonial_content_inner">
+												<p> Trabalhar com Inocente  foi uma grande vantagem durante minha carreira em uma empresa anterior. Ele estava sempre um passo à frente em relação a problemas potenciais e garantia que todas as nossas operações de TI estivessem em conformidade com as melhores práticas de segurança. Sua liderança inspirou confiança em toda a equipe e contribuiu muito para o sucesso da empresa.</div>
+										</div>
+										<div class="testimonial_author clearfix">
+											<img alt="" src="images/client-1.jpg" class="testimonial_photo">
+											<h3 class="testimonial_name">Juma Paulo</h3>
+											<div class="testimonial_position">Administrador</div>
+										</div>
+									</div>
+                                    <!-- 2 -->
+                                    <div class="testimonial">
+										<div class="testimonial_content">
+											<div class="testimonial_content_inner">
+												<p>Tive a sorte de trabalhar com Inocente um gestor de sistemas de informação muito competente em uma empresa onde eu atuei como analista de negócios. Ele estava sempre atualizado com as últimas tecnologias e tendências e foi fundamental para garantir que nossos sistemas fossem escaláveis e estivessem prontos para enfrentar os desafios futuros.</div>
+										</div>
+										<div class="testimonial_author clearfix">
+											<img alt="" src="images/client-2.jpg" class="testimonial_photo">
+											<h3 class="testimonial_name">Orlando Jose</h3>
+											<div class="testimonial_position">Empreendedor</div>
+										</div>
+									</div>
+                                    <!-- 3 -->
+                                    <div class="testimonial">
+										<div class="testimonial_content">
+											<div class="testimonial_content_inner">
+												<p> Trabalhei com o Inocente Chavane, um gestor de sistemas de informação incrível em uma empresa anterior e ele foi fundamental para garantir que todos os nossos sistemas estivessem funcionando sem problemas. Ele sempre foi muito acessível e prestativo quando precisávamos de ajuda e suas soluções inovadoras nos permitiram economizar tempo e recursos valiosos.</div>
+										</div>
+										<div class="testimonial_author clearfix">
+											<img alt="" src="images/client-3.jpg" class="testimonial_photo">
+											<h3 class="testimonial_name">Osvaldo Antonio</h3>
+											<div class="testimonial_position">Gestor de Marketing</div>
+										</div>
+									</div>
+                                    <!-- Fim 3 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Fim da tabela -->
+                </div><!-- Fim do container -->
+            </div>
+        </section>
+        <!-- Fim da seccao testemunhos -->
+
+        <!-- Seletor de contatos -->
+        <section id="contact">
+            <div class="contact-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9 col-sm-offset-3 contactWrapper">
+                            <!-- seccao titulos -->
+                            <div class="section-title">
+                                <h2><span>07</span>Entre em contato</h2>
+                            </div><!-- Fim da seccao titulos -->
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-6 contact-form">
+									<div class="widget">
+                                    <form action="index.php" method="post">
+                                        <div class="input-style">
+                                            <div>
+                                                <input class="form-control" type="text" id="nome" name="nome" placeholder="Nome">
+                                            </div>
+                                            <div>
+                                              <input class="form-control" type="email" id="email" name="email" placeholder="E-Mail">
+                                            </div>
+                                        </div>
+                                        <div class="text-style">
+                                            <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+                                        </div>
+                                        <input type="submit" id="submit" class="btn btn-info" name="submit" value="Enviar Mensagem">
+                                       
+                                    </form>
+									</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 contact-info">
+									<div class="widget">
+                                    <ul>
+                                        <li>
+                                            <h3><span class="icon_pin" aria-hidden="true"></span> Endereco</h3>
+                                            <p>Quelimane , Av.Liberdade , em frente a FIPAG</p>
+                                        </li>
+                                        <li>
+                                            <h3><span class="icon_phone" aria-hidden="true"></span> Celular</h3>
+                                            <p>+(258) 865 337 979</p>
+                                        </li>
+                                        <li>
+                                            <h3><span class="icon_mail" aria-hidden="true"></span> Email</h3>
+                                            <p>Chavaneinocente@gmail.com</p>
+                                        </li>
+                                    </ul>
+									</div>
+                                </div>
+                            </div><!-- Fim da tabela -->
+                            <!-- Google Mapas -->
+                            <div class="google-maps">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4775558.617345851!2d35.49464119142499!3d-17.918622459465308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e0e8bb1553c9a27%3A0xb04ca033a066e3d1!2sQuelimane%2C%20Mozambique!5e0!3m2!1sen!2s!4v1648042482851!5m2!1sen!2s" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <!-- Fim do Google Mapas -->
+                        </div>
+                    </div><!-- end row -->
+                </div><!-- end container -->
+            </div>
+        </section>
+        <!-- Fim da seccao de contatos -->
+
+        <!-- Rodape -->
+        <footer class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-9 col-sm-offset-3 footer-background">
+                        <div class="row">
+                        <div class="col-sm-6 text-left">
+                            Copyright &copy; 2023 Inocente. Todos os direitos reservados 
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            Projetado  <i class="fa fa-heart-o red"></i> com <a target="_blank" href="https://github.com/InocenteChavane">Inocente Chavane</a>
+                        </div>
+                    </div>
+                      
+                    </div>
+                </div><!-- Fim da Tabela-->
+            </div><!-- Fim do container -->
+        </footer>
+        <!-- Fim do Rodape -->
+		
+	
+
+        <!-- ##### JAVASCRIPTS ##### -->
+        <!-- jQuery Biblioteca -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Bootstrap js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Graficos de Retina -->
+        <script src="js/retina.min.js"></script>
+        <!-- Efeito popup -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Plugins de temas -->
+        <script src="js/theme-plugins.min.js"></script>
+        <!--  Scripts Personalizado -->
+        <script src="js/scripts.min.js"></script>
+    </body>
+</html>
